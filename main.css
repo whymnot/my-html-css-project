@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Reset CSS */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/* End of Reset CSS */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* Header */
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.title1 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.header {
+    padding-top: 46px;
+    background-color: #f1f1f1;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 76px;
+}
+
+.logo {
+    position: relative;
+    padding: 0 12px 3px 0;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    color: black;
+}
+
+.logo::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fda300;
+    border-radius: 50%;
+}
+
+
+/* NAV */
+
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-button {
+    display: none;
+}
+
+.nav-link {
+    color: black;
+}
+
+
+.nav-link.active {
+    color: #606060;
+}
+
+/* Header content */
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.header-content {
+    margin-top: 124px;
+    min-width: 500px;
+}
+
+.header-content p {
+    line-height: 2;
+}
+.header-heading {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 44px;
+
+}
+.header-img {
+}
+
+/* Services */
+
+.services {
+    padding: 90px 0;
+}
+.services-row {
+    display: flex;
+    column-gap: 30px;
+
+}
+.service-card {
+}
+.service-card-image {
+    margin-bottom: 30px;
+}
+.service-card-title {
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-style: 24px;
+    text-transform: uppercase;
+}
+
+.service-card p {
+    line-height: 2;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 90px 0;
+    background-color: #F1F1F1;
+}
+.portfolio-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.project {
+    text-align: center;
+}
+.project + .project {
+    margin-top: 90px;
+}
+.project-img {
+    margin-bottom: 40px;
+}
+.project-title {
+    font-size: 18px;
+}
+
+.project-title a {
+    color: black;
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.contacts {
+    padding: 90px 0;
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 40px;
+    font-size: 34px;
+    font-weight: 600;
+}
+.contatcs-content {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+.contacts-button {
+    margin-bottom: 80px;
+}
+.btn {
+    display: inline-block;
+    padding: 7px 22px;
+    background-color: #070707;
+    border-radius: 30px;
+
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}    
+
+.btn:hover, btn:focus {
+    background-color: #323232;
+}
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+.contacts-soical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+    margin-bottom: 40px;
+}
+.contacts-footer {
+    color: #828282;
+}
+
+
